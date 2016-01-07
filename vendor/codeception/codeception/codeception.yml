@@ -12,14 +12,15 @@ settings:
     memory_limit: 1024M
     log: true
 modules:
-     Db:
-         dsn: 'mysql:host=localhost;dbname=testing'
-         user: 'root'
-         password: 'n0m3l0'
-         dump: 'tests/_data/dump.sql'
-         populate: true
-         cleanup: false
-         reconnect: true
+    config:
+        AMQP:
+            host: 'localhost'
+            port: '5672'
+            username: 'guest'
+            password: 'guest'
+            vhost: '/'
+            queues: [queue1, queue2]
+
 extensions:
     enabled: [Codeception\Extension\RunFailed]
 

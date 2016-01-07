@@ -2,6 +2,6 @@
 
 # suite for unit (internal) tests.
 error_level: "E_ALL | E_STRICT"
-class_name: CodeGuy
+class_name: UnitTester
 modules:
-    enabled: [CodeHelper, EmulateModuleHelper]
+    enabled: [CodeHelper, EmulateModuleHelper, Asserts]
