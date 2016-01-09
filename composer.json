@@ -8,7 +8,9 @@
         "codeception/codeception" : "*",
         "fzaninotto/faker" : "*"
     },
-
+    "require-dev": {
+        "mockery/mockery": "dev-master"
+    },
     "autoload":{
         "psr-4":{
             "Controller\\" : "src\\controller",
